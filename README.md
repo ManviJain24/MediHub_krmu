@@ -57,7 +57,7 @@ needs.
 
 ## Team :
 
-- [Manvi Jain](github.com/ManviJain24)
-- [Smita Tripathi](github.com/SmitaTripathi)
-- [Kushagra Varshney](github.com/KushagraVarshney05)
-- [Yash Varshney](github.com/Yash-Var)
+- [Manvi Jain](https://github.com/ManviJain24)
+- [Smita Tripathi](https://github.com/SmitaTripathi)
+- [Kushagra Varshney](https://github.com/KushagraVarshney05)
+- [Yash Varshney](https://github.com/Yash-Var)
