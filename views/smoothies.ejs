@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Care</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="/">WE Care</a></h1>
+    <ul>
+      <% if (user) { %>
+        <li>Welcome, <%= user.email %></li>
+        <li><a href="/" class="btn">Home</a></li>
+        <li><a href="/bloodDonor" class="btn">Blood Donor</a></li>
+        <li><a href="/logout" class="btn">Log out</a></li>
+      <% } else { %>
+        <li><a href="/login" class="btn">Log in</a></li>
+        <li><a href="/signup" class="btn">Sign up</a></li>
+      <% } %>
+    </ul>
+    
+  </nav>
+  <h1 style="text-align: center;">Donors who want to donote there blood</h1>
+<div id="yash">
+  
+</div>
+
+  <!-- <li class="recipe">
+    <h1 style="color:antiquewhite">Yash Varshney</h1>
+  <div style="margin-top:20px">
+    <h4>Banana Boost</h4>
+    <p>Banana, Vanilla ice cream, Milk</p>
+  </div>
+  </li> -->
+  <!-- <li class="recipe">
+    <img src="/smoothie.png" alt="smoothie recipe icon">
+    <h4>Tropical Twist</h4>
+    <p>Peach, Pinapple, Apple juice</p>
+  </li>
+  <li class="recipe">
+    <img src="/smoothie.png" alt="smoothie recipe icon">
+    <h4>Protein Packer</h4>
+    <p>Oats, Peanut butter, Milk, Banana, Blueberries</p>
+  </li>
+  <li class="recipe">
+    <img src="/smoothie.png" alt="smoothie recipe icon">
+    <h4>Banana Boost</h4>
+    <p>Banana, Vanilla ice cream, Milk</p>
+  </li>
+  <li class="recipe">
+    <img src="/smoothie.png" alt="smoothie recipe icon">
+    <h4>Tropical Twist</h4>
+    <p>Peach, Pinapple, Apple juice</p>
+  </li>
+  <li class="recipe">
+    <img src="/smoothie.png" alt="smoothie recipe icon">
+    <h4>Protein Packer</h4>
+    <p>Oats, Peanut butter, Milk, Banana, Blueberries</p>
+  </li> -->
+</ul>
+
+
+<footer>Made By ❤️ Team We Care</footer>
+<script>
+  const donors= document.getElementById("yash");
+
+const url = 'http://localhost:9000/api';
+
+fetch(url).then((Response) => Response.json()).then((json) => {
+  // <li class="recipe">
+  //   <!-- <img src="/smoothie.png" alt="smoothie recipe icon"> -->
+  //   <h1>Yash Varshney</h1>
+  // <div style="margin-top:10px">
+  //   <h4>Banana Boost</h4>
+  //   <p>Banana, Vanilla ice cream, Milk</p>
+  // </div>
+  // </li>
+  // <ul class="recipes" id="yash">
+  var temp= "<ul class ='recipes'>";
+  json.member.forEach(element => {
+    temp+= "<li class='recipe'>"+"<h1 style='color:blue'> " + element.name +  "</h1> " +"<div style='margin-top:30px'>"+ "<h3> " + element.age + "</h3>" +  "<h3> " + element.gender + "</h3>" +"</div>"+ "<h3>" + element.Blood_Group + "</h3>" +"</li>";
+  });
+  temp+="</ul>";
+
+
+
+donors.innerHTML= temp;
+});
+</script>
+</body>
+</html>

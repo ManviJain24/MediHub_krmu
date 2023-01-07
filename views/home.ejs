@@ -1,0 +1,278 @@
+<!-- <%- include('partials/header'); -%> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Care</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="/css/resps.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>We Care</a>
+
+    <nav class="navbar">
+      <% if (user) { %>
+        <a>Welcome, <%= user.email %></a>
+        <a href="/">home</a>
+
+        <a href="/logout">Log Out</a>
+        <% }else { %>
+          <a href="/login">Log In</a>
+          <a href="/signup">Sign Up</a>
+          <% } %>
+    </nav>
+
+    <div id="menu" class="fas fa-bars"></div>
+  </header>
+  <!-- <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>INNOTECH</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#services">services</a>
+        <a href="#about">about</a>
+        <a href="#blogs">blogs</a>
+        <a href="./pages/doctorsappointment.html">book</a>
+      </nav>
+
+      <div id="menu" class="fas fa-bars"></div>
+    </header> -->
+  <!-- <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>INNOTECH</a>
+  
+      <nav class="navbar">
+      
+          <% if (user) { %>
+              <a>Welcome, <%= user.email %></a>
+              <a href="/" class="btn">Home</a>
+              <a href="/logout" class="btn">Log out</a>
+            <% }else { %>
+              <li><a href="/login" class="btn">Log in</a></li>
+              <li><a href="/signup" class="btn">Sign up</a></li>
+            <% } %>
+
+      </nav>
+  
+  
+      <div id="menu" class="fas fa-bars"></div>
+    </header> -->
+  <section class="home" id="home">
+    <div class="image">
+      <img src="animatedfile/home-img.svg" alt="" />
+    </div>
+
+    <div class="content">
+      <h3>stay safe, stay healthy</h3>
+      <p>
+       A one stop point for all your medical needs, we are here for your good wellness in every step!
+      </p>
+      <a href="#book" class="btn">
+        contact us <span class="fas fa-chevron-right"></span>
+      </a>
+    </div>
+  </section>
+  <section class="icons-container">
+    <div class="icons">
+      <i class="fas fa-ambulance"></i>
+      <h3 class="num" data-val="50">00</h3>
+      <p>ambulance at work</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-users"></i>
+    <div style="display: flex; flex-direction:column;"> <h3 class="num" data-val="100">000</h3>
+      
+    </div>
+      <p>registered donors</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-procedures"></i>
+      <h3 class="num" data-val="200" >000</h3>
+      <p>bed facility</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-hospital"></i>
+      <h3 class="num" data-val="20">00</h3>
+      <p>working ngo's</p>
+    </div>
+  </section>
+
+  <!--icons-->
+
+  <!--services-->
+
+  <section class="services" id="services">
+    <h1 class="heading">our <span>services</span></h1>
+
+    <div class="box-container">
+     
+
+      <div class="box">
+        <i class="fa fa-tint"></i>
+        <h3>Blood donors</h3>
+        <p>
+          Get the list of people are ready to donate blood for humanity.
+        </p>
+        <a href="/bloodDonor" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+     
+
+      <!-- <div class="box">
+        <i class="fas fa-people-arrows"></i>
+        <h3>Organs donors</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.
+        </p>
+        <a href="/smoothies" class="btn">
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div> -->
+
+      <div class="box">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>Doctor Appointment</h3>
+        <p>
+          Book your appointment online with our Doctor.
+        </p>
+        <a href="/doctor" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+      
+      <div class="box">
+        <i class="fa-solid fa-file-prescription"></i>
+        <h3>Disease  Predictor</h3>
+        <p>
+          Symptoms gives probability of possible disease based on data by users.
+        </p>
+        <a href="http://localhost:3000/" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-procedures"></i>
+        <h3>bed facility</h3>
+        <p>
+          Check the availability of hospital beds in your city.
+        </p>
+        <a href="/bed" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-notes-medical"></i>
+        <h3>Vaccine tracker</h3>
+        <p>
+          Check for the availability of vacccine in your locality.
+        </p>
+        <a href="/vacc" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-ambulance"></i>
+        <h3>instant ambulance</h3>
+        <p>
+          Get an instant ambulance at your doorstep in case of emergency.
+        </p>
+        <a href="/book" class="btn">
+          Visit site <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--services-->
+
+  <!--about-->
+
+  <section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+
+    <div class="row">
+      <div class="image">
+        <img src="animatedfile/about-img.svg" alt="" />
+      </div>
+
+      <div class="content">
+        <h3>we take care of your healthy life</h3>
+        <p> 
+           We are introducing a new feature of AR Based Disease Pointer , It looks for patients 
+           report and highlights those infected areas which needs special medical attention.
+          </p>
+       
+        <a href="/smoothies" class="btn">
+          learn more <span class="fas fa-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--about-->
+
+  <!--book-->
+
+  <section class="book" id="book">
+    <h1 class="heading"><span>Contact</span> us</h1>
+
+    <div class="row">
+      <div class="image">
+        <img src="animatedfile/book-img.svg" alt="" />
+      </div>
+
+      <form action="/" method="POST">
+        <h3>contact form</h3>
+        <input type="text" placeholder="Your Name" class="box" name="name"  required/>
+        <input type="number" placeholder="Your Contact Number" class="box" name="number" required />
+        <input type="email" placeholder="Your Contact Email" class="box" name="email"  required/>
+        <input type="date" class="box" name="date" required />
+        <!-- <input type="submit" value="book now" class="btn" /> -->
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!--book-->
+
+
+
+ 
+  <!-- <%- include('partials/footer'); -%> -->
+  <section class="footer">
+    <div class="credit">
+      Made By ❤️ Team We Care
+    </div>
+  <section>
+      <script src="/js/toggle.js"></script>
+      <script src="https://kit.fontawesome.com/6fce547056.js" crossorigin="anonymous"></script>
+      <script>
+        let valueDisplay=document.querySelectorAll(".num");
+        let interval=3000;
+        valueDisplay.forEach((valueDisplay)=>{
+          let startValue=0;
+          let endValue=parseInt(valueDisplay.getAttribute("data-val"));
+          let duration=Math.floor(interval/endValue);
+          let counter =setInterval(function(){
+            startValue+=1;
+            valueDisplay.textContent=startValue;
+            if(startValue==endValue){
+              clearInterval(counter);
+            }
+            
+          },duration)
+        })
+      </script>
+</body>
+
+</html>

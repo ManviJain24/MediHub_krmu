@@ -1,0 +1,123 @@
+<!-- <%- include('partials/header'); -%> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="/css/bed.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>We Care</title>
+  <style>
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      padding-left: 1rem;
+      border: var(--border);
+      border-radius: 0.5rem;
+      box-shadow: var(--box-shadow);
+      color: var(--color);
+      cursor: pointer;
+      font-size: 1.7rem;
+      background: #fff;
+    }
+
+    .btn:hover {
+      background: var(--color);
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>We Care</a>
+
+    <nav class="navbar">
+
+      <% if (user) { %>
+        <a>Welcome, <%= user.email %></a>
+        <a href="/">Home</a>
+        <a href="/logout">Log out</a>
+        <% } %>
+    </nav>
+
+
+    <div id="menu" class="fas fa-bars"></div>
+  </header>
+ 
+
+
+  <div class="row">
+    <div class="column">
+      <!-- <img id="bed-img" src="/assets/Sick patient in bed vector.jpg" alt=""><br /> -->
+      <iframe width="600px" height="450px"  src="https://momento360.com/e/u/6ea426948126445da6b8224c479bdfa9?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+                     frameborder="0"></iframe>
+    </div>
+
+    <div class="column">
+      <form method="post" action="/bed">
+        <h2>Book Bed</h2>
+
+        <label for="">Name :</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Enter your full name" required>
+        <br>
+        <label for="">Email :</label><br>
+        <input type="email" name="email" id="email" placeholder="abcdef@gamil.com" required>
+        <br>
+        <label for="">Phone Number :</label><br>
+        <input type="text" name="phone_number" id="phone" placeholder="Enter your phone number" required>
+        <br>
+        <label for="">City :</label><br>
+        <input type="text" name="city" id="city" placeholder="Enter your preferred city (e.g. Indore)" required>
+        <br>
+
+        <label for="">Gender :</label><br>
+        <input name="Gender" id="gender" type="radio" value="Male"> Male <input name="Gender" type="radio"
+          value="Female">Female
+        <input type="radio" value="Others">Others
+        <br><br>
+        Select Blood Group : <br>
+
+        <input name="Blood Group" list="blood group" placeholder="Blood Group">
+        <datalist id="blood group">
+          <option>A Positive</option>
+          <option>A Negative</option>
+          <option>B Positive</option>
+          <option>B Negative</option>
+          <option>AB Positive</option>
+          <option>AB Negative</option>
+          <option>O Positive</option>
+          <option>O Negative</option>
+          <option>Unknown</option>
+        </datalist>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+
+
+
+
+    </div>
+    <div id="results" class="container mb-5 ">
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="/js/bed2.js"></script>
+
+</body>
+
+</html>

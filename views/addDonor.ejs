@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/Register.css'>
+    <link rel="icon" href='/Images/bb_logo(black).png' type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<title>We Care</title>
+
+<body>
+
+    <div class="inner">
+        <div class="photo">
+            <img src="/Images/regphoto.png">
+        </div>
+        <div class="user-form">
+            <h1>Start Saving Lives</h1>
+            <form  method="POST" action="/addDonor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Name" name="name" required id="name">
+                <br>
+                <i class="fa-solid fa-arrow-up-9-1"></i>
+                <input type="number" placeholder=" Age" name="age" required>
+                <br>
+                <i class="fa-solid fa-arrow-up-9-1"></i>
+                <input type="text" placeholder=" Gender" name="gender" required>
+                <br>
+                <i class="fa-solid fa-droplet"></i>
+                <input type="text" placeholder="Blood Group" id="Blood_Group" name="Blood_Group" required>
+                <br>
+                <!-- <div class="safety" style="font-family: sans-serif; font-size: 20px;">
+            Enter Blood Group
+            </div> -->
+                <div class="action-btn">
+                    <button class="btn primary" >Donate</button>
+                    <button class="btn" onclick=window.location='/apidonor'>Skip</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/Register.js"></script>
+    <script src="https://kit.fontawesome.com/6fce547056.js" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+    
+</body>
+
+</html>
