@@ -1,0 +1,158 @@
+
+:root {
+  --color: #16a085;
+  --black: #444;
+  --light-color: #16a085;
+  --box-shadow: 0.5rem 0.5rem 0 #99ddd0;
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--black);
+  --aboutcolor:#517ca7;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* text-transform: capitalize; */
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+  margin-bottom: 30px;
+}
+
+
+
+body {
+ 
+  font-size: 20px;
+  background: #fff; 
+  
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+  width: 80%;
+  padding: 5px;
+  margin: 20px 0;
+  border: 2px solid #000 ;
+  border-radius: 5px;
+}
+
+input[type='radio'], input[name="Blood Group"] {
+  
+  padding: 5px;
+  margin: 20px 0;
+  border: 2px solid #000 ;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  width: 70%;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-left: 20%;
+  margin-bottom: 50px;
+  font-size: 20px;
+  background-color: #16a085;
+}
+
+input[type=submit]:hover {
+  background-color: #35d7b9;
+}
+
+
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.column h2{
+  color: var(--color);
+}
+
+#bed-img{
+  width: 100%;
+  max-height: max-content;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+
+}
+
+.row {
+  margin: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+ 
+}
+
+.row:after {
+  display: table;
+  clear: both;
+}
+
+
+
+
+.header {
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  
+}
+
+.header .logo {
+  font-size: 1.3rem;
+  color: var(--black);
+  margin-left: 4rem;
+}
+
+.header .logo i {
+  color: var(--color);
+}
+
+.header .navbar a {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--color);
+}
+
+#menu {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--color);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#results{
+ border: 3px solid #444;
+  border-radius: 5px ;
+ display: none;
+margin-left: 5px;
+
+}
+#results h3{
+  color: #16a085;
+ 
+}
