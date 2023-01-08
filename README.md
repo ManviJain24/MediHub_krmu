@@ -21,9 +21,10 @@ needs.
 ![hospital bed ](./ammmb.png)
 - ## AR Anatomy
 ![hospital bed ](./ar1.jpg)
-![hospital bed ](./ar3.jpg)
+
 - ## AR Based health Education
 ![hospital bed ](./ar2.jpg)
+![hospital bed ](./ar3.jpg)
 
 ## How it work ?
 
