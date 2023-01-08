@@ -20,8 +20,10 @@ needs.
 - ## Ambulances Booking
 ![hospital bed ](./ammmb.png)
 - ## AR Anatomy
-![hospital bed ](./ar anatomy2.jpg)
+![hospital bed ](./ar1.jpg)
+![hospital bed ](./ar3.jpg)
 - ## AR Based health Education
+![hospital bed ](./ar2.jpg)
 
 ## How it work ?
 
