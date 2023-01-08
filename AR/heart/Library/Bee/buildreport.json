@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 1.67286658205537E+15,"dur": 11726926, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.6728665823772E+15,"dur": 1729092, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.67286658425656E+15,"dur": 9390800, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "01/05/2023 02:39:53",
+"meta_command_line": "\"C:/Program Files/Unity 2021.3.13f1/Editor/Unity.exe\" -projectpath C:\\Users\\meetu\\OneDrive\\Desktop\\heart -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-meetu -hubSessionId 4c7d1cd0-8c55-11ed-bfcf-ffd1afdcb536",
+"meta_command_line_args": "C:/Program Files/Unity 2021.3.13f1/Editor/Unity.exe -projectpath C:\\Users\\meetu\\OneDrive\\Desktop\\heart -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-meetu -hubSessionId 4c7d1cd0-8c55-11ed-bfcf-ffd1afdcb536",
+"meta_user_name": "meetu",
+"meta_os_version": "Microsoft Windows NT 10.0.22000.0",
+"meta_cpu_count": "4"
+}
