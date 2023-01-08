@@ -34,8 +34,12 @@ needs.
 - CSS
 - JavaScript
 - MongoDB
+- Unity 2021
+- Vuforia
+- C#
+- 3D models
 
-## Setup Instructions
+## Setup Instructions for Website
 
 #### Clone the repo in your local system
 
@@ -55,6 +59,25 @@ needs.
 
 - `npm start`
 
+## Setup Instructions for AR
+ - Install unity 2021 version
+- Open vuforia portal and download it. 
+- Sign up yourself in vuforia then login 
+- Click on the license manager ,add a licence name, a key will be generated click on it 
+It will be copied automatically. 
+- Then click on target manager then create your target image (make sure target image is 4 to 5 star  and in jpg Or png version only) 
+- Then select the target image and download the database. 
+- Now move to your unity platform. 
+- Then make sure you update your version. 
+- Now import the package
+  a) firstly vuforia 
+  b) then the target image 
+- Now import the files from the my folder AR 
+ Start with any one, the process is same for others too. 
+- Make sure you to add the key which is to be done on clicking on the AR camera open the vuforia configuration then add the key. 
+- Then enter into the playzone area. 
+- Present the image in front of the camera you will be able to see the 3D model.
+ 
 ## Team :
 
 - [Manvi Jain](https://github.com/ManviJain24)
