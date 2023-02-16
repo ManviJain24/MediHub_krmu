@@ -20,20 +20,20 @@ needs.
 - ## Ambulances Booking
 ![hospital bed ](./assests/ambulance.png)
 - ## AR Anatomy
-![hospital bed ](./assests/bed.png)
+![hospital bed ](./assests/brain.jpeg)
 
 - ## AR Based health Education
-![hospital bed ](./ar2.jpg)
-![hospital bed ](./ar3.jpg)
+![hospital bed ](./assests/hearts.jpeg)
+![hospital bed ](./assests//s.jpeg)
 
 ## How it work ?
 
 - User open the website and register in the website
   see the home page.
 
-# ![home page](homepage.png/)
+# ![home page](./assests/homepage.png)
 
-# ![services](./services.png)
+# ![services](./assests/our.png)
 
 ## Technologies used
 
