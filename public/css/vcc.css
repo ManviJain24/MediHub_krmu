@@ -1,0 +1,109 @@
+:root {
+  --color: #16a085;
+  --black: #444;
+  --light-color: #16a085;
+  --box-shadow: 0.5rem 0.5rem 0 #99ddd0;
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--black);
+}
+ 
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+body {
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #fff;
+}
+
+
+
+body > .container {
+  padding-top: 13%;
+ 
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+
+#search{
+  margin-left: 35%;
+  
+}
+
+
+#bottom{
+  padding-left: 40%;
+}
+
+
+.header {
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.header .logo {
+  font-size: 1.3rem;
+  color: var(--black);
+  margin-left: 4rem;
+}
+
+.header .logo i {
+  color: var(--color);
+}
+
+.header .navbar a {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--color);
+}
+
+#menu {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--color);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}

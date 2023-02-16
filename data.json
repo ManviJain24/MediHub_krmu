@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Genevieve Cheona",
+        "gender": "male",
+        "age": 21,
+        "Blood_Group": "A"
+    },
+    {
+        "name": "Zendaya Anderson",
+        "gender": "male",
+        "age": 22,
+        "Blood_Group": "A+"
+    },
+    {
+        "name": "Mohammed",
+        "gender": "male",
+        "age": 30,
+        "Blood_Group": "AB"
+    },
+    {
+        "name": " Sri",
+        "gender": "male",
+        "age": 33,
+        "Blood_Group": "O+"
+    },
+    {
+        "name": "Santosh",
+        "gender": "male",
+        "age": 25,
+        "Blood_Group": "A-"
+    }
+]
