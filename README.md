@@ -1,6 +1,6 @@
 # ![MediHub](./assests/upload.png)
 
-## A website to help people in pandemic situations
+## A website to help people in pandemic situation
 
 # What problem it solves ?
 
