@@ -51,7 +51,7 @@ needs.
 
 #### Clone the repo in your local system
 
-- `git clone https://github.com/SmitaTripathi/WE_CARE_`
+- `git clone https://github.com/ManviJain24/MediHub_krmu.git`
 
 #### add env file that require following things
 
