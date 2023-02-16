@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 const express = require("express");
 const auto = require("./models/bed");
@@ -24,7 +24,7 @@ const logger = async (req, res, next) => {
         port: 587,
         secure: false,
         auth: {
-          user:process.env.USER_NAME,
+          user: process.env.USER_NAME,
           pass: process.env.USER_PASSWORD,
         },
       });
@@ -33,7 +33,12 @@ const logger = async (req, res, next) => {
         to: req.body.email,
         subject: "confirmation",
         text: ` Booked`,
-        html: "<h1>Bed is booked</h1>",
+        html: `
+        <div>
+        Dear ${req.body.name}
+        Your bed is booked.
+        </div>
+        `,
       });
     };
 

@@ -32,7 +32,7 @@ mongoose
     useCreateIndex: true,
   })
   .then((result) =>
-    app.listen(3030, () => {
+    app.listen(8000, () => {
       console.log("running on port 3030");
     })
   )
@@ -50,12 +50,12 @@ app.get("/doctor", requireAuth, (req, res) => res.render("doctor"));
 app.get("/confirmation", requireAuth, (req, res) => res.render("confirmation"));
 app.get("/bloodDonor", requireAuth, (req, res) => res.render("bloodDonor"));
 app.get("/addDonor", requireAuth, (req, res) => res.render("addDonor"));
+app.get("/confirmation", requireAuth, (req, res) => res.render("confirmation"));
 app.post("/", requireAuth, async (req, res) => {
   try {
     let newdata = new data({
       name: req.body.name,
       Mobile: req.body.number,
-      email: req.body.email,
       date: req.body.date,
     });
     newdata.save();
@@ -93,7 +93,6 @@ app.post("/addDonor", async (req, res) => {
       gender: req.body.gender,
       age: req.body.age,
       Blood_Group: req.body.Blood_Group,
-
     });
     newapi.save();
     res.redirect("/apiDonor");

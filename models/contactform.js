@@ -7,23 +7,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide your name"],
   },
-Mobile:{
+  Mobile: {
     type: Number,
-    required: [true,'please enter a number']
-},
-  email: {
-    type: String,
-    required: [true, "Please enter an email"],
-    lowercase: true,
-    validate: [isEmail, "Please enter a valid email"],
+    required: [true, "please enter a number"],
   },
-  date:{
-    type : Date,
-    required: [true,'please enter a date']
-  }
+  date: {
+    type: Date,
+    required: [true, "please enter a date"],
+  },
 });
-
-
 
 const data = mongoose.model("yash", userSchema);
 

@@ -1,22 +1,28 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>We Care</title>
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <nav>
-    <h1><a href="/">WE Care</a></h1>
-    <ul>
-      <% if (user) { %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medi Hub</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1><a href="/">Medi Hub</a></h1>
+      <ul>
+        <% if (user) { %>
         <li>Welcome, <%= user.email %></li>
         <li><a href="/" class="btn">Home</a></li>
         <li><a href="/logout" class="btn">Log out</a></li>
-      <% } else { %>
+        <% } else { %>
         <li><a href="/login" class="btn">Log in</a></li>
         <li><a href="/signup" class="btn">Sign up</a></li>
-      <% } %>
-    </ul>
-    
-  </nav>
+        <% } %>
+      </ul>
+    </nav>
+  </body>
+</html>
