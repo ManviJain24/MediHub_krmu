@@ -29,7 +29,7 @@ needs.
 ## How it work ?
 
 - User open the website and register in the website
-  see the home page
+  see the home page.
 
 # ![home page](homepage.png/)
 
