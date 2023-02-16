@@ -14,8 +14,7 @@ function HowtoUse() {
             <h1 clasName="mb-xxl">How to use?</h1>
             <div className="line-graph">
               <p>
-                Dev care will help you to take care of your health as
-                developers.
+                MediHub will help you to take care of your health as developers.
               </p>
 
               <h2 className="mt-xl mb-md">Back care</h2>
