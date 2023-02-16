@@ -1,4 +1,4 @@
-# ![We Care](./Caret.png)
+# ![MediHub](./assests/upload.png)
 
 ## An website to help people in pandemic situations
 
@@ -6,21 +6,21 @@
 
 We know in pandemic situations there is a great problem to reach out to things such as to doctor for
 appointment, check the availability of vaccines near to our locality and also to reach at blood donation
-camps. So we have a solution to problem. Our website `We Care` provides a one point solution to our all medical
+camps and there is also a unique feature  ErgoAlert focused on promoting good ergonomic practices for overall well-being, including posture, eye care, and ear care. So we have a solution to problem. Our website `MediHub` provides a one point solution to our all medical
 needs.
 
 ### Features of our Website are :
 
 - ## Hospital Bed Booking
-![hospital bed ](./bedbook.png)
+![hospital bed ](./assests/bed.png)
 - ## Doctor's Appointment
-![hospital bed ](./app.png)
+![hospital bed ](./assests/doctor.png)
 - ## Blood donors
-![hospital bed ](./blood.png)
+![hospital bed ](./assests/blood.png)
 - ## Ambulances Booking
-![hospital bed ](./ammmb.png)
+![hospital bed ](./assests/ambulance.png)
 - ## AR Anatomy
-![hospital bed ](./ar1.jpg)
+![hospital bed ](./assests/bed.png)
 
 - ## AR Based health Education
 ![hospital bed ](./ar2.jpg)
