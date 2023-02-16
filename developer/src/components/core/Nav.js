@@ -11,6 +11,10 @@ const Nav = () => {
             <span className="logo-title">Medi Hub</span>
           </div>
         </Link>
+        <a href="http://localhost:3030">
+          {" "}
+          <p className="yash">Home</p>
+        </a>
       </div>
     </header>
   );

@@ -61,3 +61,8 @@
 .navigation .nav-link:focus {
   color: var(--clr-primary);
 }
+
+.yash{
+  padding: auto;
+  margin-left: 100%;
+}
