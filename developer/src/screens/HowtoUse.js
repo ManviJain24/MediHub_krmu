@@ -53,7 +53,7 @@ function HowtoUse() {
                 <ol>
                   <li>Start the timer</li>
                   <li>
-                    Every 20 minutes the app will remind you to do an exercise
+                    Every 40 minutes the app will remind you to do an exercise
                   </li>
                   <li>Click on the notification</li>
                   <li>
@@ -61,14 +61,20 @@ function HowtoUse() {
                     when u r done doing the exercise
                   </li>
                   <li>
-                    The exercise is to look 20 feet away for 20 seconds every 20
+                    The exercise is to look 20 feet away for 20 seconds every 40
                     minutes to relax our eyes.
                   </li>
                 </ol>
               </p>
 
               <h2 className="mt-xl mb-md">Ear care</h2>
-              <p style={{ maxWidth: "80ch", lineHeight: "2", marginBottom: "5rem" }}>
+              <p
+                style={{
+                  maxWidth: "80ch",
+                  lineHeight: "2",
+                  marginBottom: "5rem",
+                }}
+              >
                 <ol>
                   <li>Click on the toggle button of Ear care on dashboard</li>
                   <li>Give earphone permission</li>

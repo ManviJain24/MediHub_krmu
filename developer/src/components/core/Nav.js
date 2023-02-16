@@ -7,7 +7,7 @@ const Nav = () => {
       <div className="header-info-wrapper">
         <Link to="/">
           <div className="logo">
-            <img src="./assets/fire-symbol.png" alt="" className="logo-img" />
+            <i class="fas fa-heartbeat"></i>
             <span className="logo-title">Medi Hub</span>
           </div>
         </Link>
