@@ -50,7 +50,7 @@ needs.
 ## AR Anatomy
 
 https://drive.google.com/drive/folders/1PP9wLep-DxpEDWytxpbroPY0Hhs_e-pf
-(related to fractures).
+https://drive.google.com/drive/folders/1zbfsQlIRkyWIFhIE0AWgEl5AbNefw2ch?usp=sharing (related to fractures).
 
 ## Setup Instructions for Website
 
