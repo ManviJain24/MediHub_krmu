@@ -6,7 +6,7 @@
 
 We know in pandemic situations there is a great problem to reach out to things such as to doctor for
 appointment, check the availability of vaccines near to our locality and also to reach at blood donation
-camps so we have a solution to this problem. And there is also a unique feature  ErgoAlert focused on promoting good ergonomic practices for overall well-being, including posture, eye care, and ear care.  `MediHub` provides a one point solution to our all medical
+camps so we have a solution to this problem. And there is also a unique feature  ErgoAlert focused on promoting good ergonomic practices for overall well-being, including posture, eye care,and ear care.  `MediHub` provides a one point solution to our all medical
 needs.
 
 ### Features of our Website are :
